@@ -1,0 +1,148 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: cursive;
+}
+
+/* navbar div */
+#container1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: auto ;
+}
+
+#container1 img{
+    width: 75px;
+    height: 70px;
+    border: 2px solid brown;
+}
+/* Navbar */
+#navbar ul li a.active{
+    background-color: black;
+}
+
+#navul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.navli{
+    padding: 10px;
+    margin: 10px;
+
+}
+
+.navli a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navli a:hover{
+    background-color: cyan;
+    color: white;
+    /* font-size: 25px; */
+    border-radius: 10px;
+}
+
+/* Home section styling */
+
+#home{
+    color: white;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#home::before{
+    content: " ";
+    position: absolute;
+    top: 0px;
+    background: url("E:/WEB DEVELOPMENT/website Projects/Bridgelabs/static/Images/bl.jpg") no-repeat center center/cover;
+    height: 78%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1.2;
+}
+
+/*Contact Us*/
+#Contact::before{
+	content: "";
+	position: absolute;
+	background: url("E:/WEB DEVELOPMENT/website Projects/Bridgelabs/static/Images/contact.jpg") no-repeat center center/cover;
+	height: 98%;
+	width: 100%;
+	z-index: -1;
+	opacity: 0.5;
+}
+
+#Contact div{
+	display: flex;
+	flex-direction: column;  
+	width: 100%;
+}
+
+#Contact div input ,textarea{
+	margin: 10px;
+	padding: 10px;
+	width: 400px;
+	margin-left: 100px;
+	border-radius: 10px;
+	font-size: 25px;
+}
+
+#Contact div .b3{ 
+	margin: 10px;
+	padding: 10px;
+	width: 400px;
+	margin-left: 110px;
+	font-size: 20px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+#Contact div .b3:hover{
+	background-color: black;
+	color:white;
+	font-size: 25px;
+}
+
+footer{
+    background: url('E:/WEB DEVELOPMENT/website Projects/Bridgelabs/static/Images/fotter.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 5px;
+}
+
+/* Utility Styling */
+.hprimary{
+    font-size: 35px;
+    text-align: center;
+}
+
+.hsecondary{
+    font-size: 25px;
+    margin: 15px;
+    text-align: center;
+}
+
+.btn{
+    background-color: brown;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 30px;
+}
+
+.para{
+    text-align: center;
+    margin: 5px 150px ;
+}
+
+.anchor{
+    text-decoration: none;
+    color: white;
+}

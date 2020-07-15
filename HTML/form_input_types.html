@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Input  Types</title>
+	<style>
+		body{
+			background-color: Blue;
+		}
+		div{
+			background-color: Orange;
+			width: 600px;
+			padding: 10px;
+			margin: 5px;
+			font-family: cursive,y sans-serif;
+			border-radius: 10px;
+		}
+		h2{
+			background-color: Green;
+			width: 300px;
+		}
+	</style>
+</head>
+<body>
+	<h2>Input Types</h2>
+	<div>
+		1.type="text" - It is the text box.
+		<br>
+		2.type="password"- It is the password box. no text is shown.
+		<br>
+		3.type="submit"- Submit button will appear.
+		<br>
+		4.type="reset"- The reset button will appear.
+		<br>
+		5.type="radio"-The button will appear.To select one radio button name should be same.
+		<br>
+		6.type="checkbox"- The checkbox button will appear. put values.
+		<br>
+		<h3>HTML5 Input Tags</h3>
+		7.typr="color" -A small box will appear click on it. A dialog boc will appear and choose the color.
+		<br>
+		8.typr="date"- It will display date.
+		<br>
+		9.type="datetime-local"- It will display time along with date.
+		<br>
+		10.type="email"- The email text box will appear.It looks same as text box but larger in size.
+		<br>
+		11.type="number"- The Text box will appear it will only take numbers as input.Use min & max in the tag.
+		<br>
+		12.type="range"- A range line will appear. Use min & max in the tag.	 
+		<br>
+		13.type="search"- Use it check it yourself.
+		<br>
+		14.type="time"- Oniy time selection.
+		<br>
+		15.type="url"- Type any thing without http://.
+		<br>
+		16.type="week"-Used to select week.
+	</div>
+	<div>
+		<form>
+			<label for="username">Username :</label>
+			<input type="text" id="username">	
+		</form>
+	</div>
+	<div>
+		<form>
+			<label for="password">Password :</label>
+			<input type="password" id="password">
+		</form>
+	</div>
+	<div>
+		<form>
+			<label>Do you want to submit?</label>
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+	<div>
+		<form>
+			<label>Do you want to reset?</label>
+			<input type="reset" value="Reset">
+		</form>
+	</div>
+	<div>
+		<form>
+			<label>HTML is easy?</label>
+			<input type="radio" value="Yes" name="easy">YES
+			<input type="radio" value="No" name="easy">NO
+		</form>
+	</div>
+	<div>
+		<form>
+			<label>What are your hobbies?</label>
+			<input type="checkbox" value="Foodie" name="">Foodie
+			<input type="checkbox" value="Trekking" name="">Trekkking
+			<input type="checkbox" value="Listning music" name="">Listening music
+			<input type="checkbox" value="Travelling" name="">Travelling
+		</form>
+	</div>
+	<h2>HTML5 Input Types</h2>
+	<div>
+		<form>
+			<label>Select a color :</label>
+			<input type="color">
+		</form>
+	</div>
+	<div>
+		<form>
+			<label>Select date and time</label>
+			<input type="date" name="">
+		</form>
+	</div>
+	<div>
+		<form>
+			<label>Select date and date and time</label>
+			<input type="datetime-local" name="">
+		</form>
+	</div>
+		<div>
+		<form>
+			<label>Select date and email</label>
+			<input type="email" name="">
+			<input type="submit" value="Submit" name="">
+		</form>
+	</div>	
+		<div>
+		<form>
+			<label>Select a number</label>
+			<input type="number" min="10" max="55">
+		</form>
+	</div>
+		<div>
+		<form>
+			<label>Select a range</label>
+			0<input type="range" min="0" max="100">100
+		</form>
+	</div>
+		<div>
+		<form>
+			<label>Search Something</label>
+			<input type="search">
+		</form>
+	</div>
+		<div>
+		<form>
+			<label>Select a time</label>
+			<input type="time" name="">
+		</form>
+	</div>
+		<div>
+		<form>
+			<label>Select URL</label>
+			<input type="url" name="">
+		</form>
+	</div>
+		<div>
+		<form>
+			<label>Select week</label>
+			<input type="week" name="">
+		</form>
+	</div>
+</body>
+</html>

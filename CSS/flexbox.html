@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flex box in Css</title>
+	<style type="text/css">
+		.container{
+			border: 2px solid black;
+			width: 100%;
+			height: 500px;
+			/*Flex properties for container*/
+			/*initilizing the container as flex box*/
+			display: flex;
+			/*/*flex-direction: row-reverse;  By default flex-direction is row, we can change it to row-reverse,column-reverse,column */
+			flex-direction: row;
+
+			/*flex-wrap: wrap;   Used for wraping the content, by default flex-wrap is no wrap we can change it to wrap-reverse*/
+
+			/*flex-flow: row-reverse wrap;  it is a short hand of flex-direction and flex wrap first parameter is direction second is wrap*/
+			
+			/*justify-content: center; Used to move or justify the content values are center,space-evenly,space-between,space-around*/
+			
+			/*align-items: center;  used to align flexbox items values are center,flex-end,flex-start,strech
+			align-items: flex-start;
+			align-items: flex-end;
+			align-items: stretch;*/
+		}
+
+		.item{
+			border: 2px solid red;
+			background-color: tomato;
+			width: 100px;
+			height: 100px;
+			padding: 10px;
+			margin: 10px;
+		}
+
+		/*Flex properties for container*/
+		#first{
+			/*Higher the order the later it shows*/
+			order: 2;
+			flex-grow: 4;
+		}
+
+		#second{
+			order: 3;
+			flex-grow: 5;
+			flex-shrink: 3;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div id="first" class="item">First Box</div>
+		<div id="second" class="item">Second Box</div>
+		<div id="third" class="item">Third Box</div>
+		<!-- <div class="item">Fourth Box</div> 
+		<div class="item">Fifth Box</div>
+		<div class="item">Sixth Box</div>-->
+	</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SetInterval and SetTimeout in JS</title>
+</head>
+<body>
+	<div>
+		<span id="time">Current time is </span>
+	</div>
+	<script type="text/javascript">
+		// setTimeout(function name,time in milisecond,"multiple strings") helps to run a function only once after a fixed interval of time.
+
+		// function greet(string){
+		// 	console.log('Hello, How you doing?'+string+" ");
+		// }
+		// let timeout = setTimeout(greet,3000, "Everything all right");
+		// clearTimeout(timeout); 
+		// clearTimeout- helps in clearing the "id" returned by setTimeout to timeout variable.
+		
+		//setInterval(function name,time in milisecond,"multiple strings")- helps to run a function multiple times after a fixed interval of time.
+
+		function displaytime(){
+			time = new Date();
+			console.log(time);
+			setInterval(displaytime,1000);
+			document.getElementById('time').innerHTML = time;
+		}
+		setInterval(displaytime,1000);		
+	</script>
+</body>
+</html>

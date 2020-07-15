@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Events and listning to events</title>
+	<style type="text/css">
+		#btn{
+			background-color: cyan;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>This is heading.</h1>
+		<p id="para">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		<button id='btn' onclick="Hide()">Show/Hide</button>
+	</div>
+	<script type="text/javascript">
+		//adding EventListener
+		let para = document.getElementById('para');
+		para.addEventListener('mouseover', function run(){
+			alert('Mouse Inside');
+		});
+
+		para.addEventListener('mouseout', function run(){
+			alert('Mouse Outside');
+		});
+
+		//creating function for hiding paragraph
+		function Hide(){
+			let btn = document.getElementById('btn');
+			let para = document.getElementById('para');
+			if(para.style.display != 'none'){
+				para.style.display = 'none';
+			}
+			else{
+				para.style.display = 'block';	
+			}
+		}
+	</script>
+</body>
+</html>

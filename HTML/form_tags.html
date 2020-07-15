@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form tags</title>
+	<style>
+		div{
+			background-color: Orange;
+			width: 500px;
+		}
+		h3{
+			background-color: Pink;
+			width: 250px;
+		}
+	</style>
+</head>
+<body>	
+	<h3>HTML Form Tags</h3>
+	<div>1.The first thing we have to do is add a "form" tag. We have divided the form tags in Three Catogories.
+		 <br>
+		 2."select " -This tag is used to add a Drop down. 
+		 <br>
+		 3."Option" - This tag is used in select tag for the option of drop down. 
+		 <br>
+		 4."textarea" - It is used to add text area in a html pg.
+	</div>
+	<h3>Form Elements</h3>
+	<div>1."label"- it is used to add words, for ex- "Username" in a form.
+		 <br>
+		 2.In Label "for = "username" " and in Input id = "username"- is used to link label and text box.
+	</div>
+	<h3>Form Input Types</h3>
+	<div>1." type="text" "-is used to display text box.text is visible
+		 <br>
+		 2." type="passward" "-If you want a passward box use it. Text is not visible.
+		 <br>
+		 3." type="submit" value="submit" "- it gives Submit button
+	</div>
+	<h3>Simple Form</h3>
+	<div>
+	<form>
+		<label for="username">Username</label>
+		<input type="text" id="username">
+		<br>
+		<label for="password">Password</label>
+		<input type="password" id="password">
+		<br>
+		<input type="submit" value="Submit">
+	</form>
+	</div>
+	<h3>Form with table</h3>
+	<div>
+		<form>
+			<table>
+				<tr>
+					<td>
+						<label for="Username">Username</label>
+					</td>
+					<td>	
+						<input type="text" id="Username">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="password">Password</label>
+					</td>
+					<td>
+						<input type="password" id="password">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="submit" value="Submit">
+					</td>
+				</tr>
+			</table>
+			<label>Select a language</label>
+			<select>
+				<option>HTML</option>
+				<option>CSS</option>
+				<option>Javascript</option>
+				<option>Bootstrap</option>
+				<option>Python</option>
+				<option>Machine Learning</option>
+				<option>Java</option>
+			</select>	
+			<br>
+			<label>Enter your message</label>
+			<textarea rows="5" cols="20"></textarea>
+			<br>
+			<label>select a language</label>
+			<input list="tech" name="technologies">
+			<datalist id="tech">
+				<option>HTML</option>
+				<option>CSS</option>
+				<option>Javascript</option>
+				<option>Bootstrap</option>
+				<option>Python</option>
+				<option>Machine Learning</option>
+				<option>Java</option>				
+			</datalist>
+		</form>
+	</div>
+</body>
+</html>

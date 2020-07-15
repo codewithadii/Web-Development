@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>String Funtions in JS </title>
+</head>
+<body>
+	<script type="text/javascript">
+		var a = "Think positive and have Faith in god."
+		var position = a.indexOf("in"); // indexOf - gives the first occurance "position" of the string.  
+		console.log(position);
+
+		position = a.lastIndexOf("in"); //lastIndexOf - gives the last occurance "position" of the string.
+		console.log(position);
+
+		// var a1 = a.slice(0,7); 
+		// slice(start index,end index) - is used to slice the string using index position. It can take -ve index position.
+		
+		// var a1 = a.substring(0,7); 
+		//substring(start index, end Index) - do the same as "slice" but does not take -ve value.
+
+		// var a1 = a.substr(0,8); - work same as above
+
+		// var a1 = a.toUpperCase(); 
+		// String become Uppercase.
+
+		// var a1 = a.toLowerCase();
+		// string become lower case
+
+		// var a1 = a.replace("Think","Do") 
+		// replace(Orignal String, Replaced string) - it will replace the string.
+
+		// var a1 = a.concat(" Everything will be good.") - it will concatenate the existing string.
+
+		// to access String element use "charAt(Index position)" function
+		var a1 = a.charAt(7);
+		console.log(a1);
+	</script>
+</body>
+</html>

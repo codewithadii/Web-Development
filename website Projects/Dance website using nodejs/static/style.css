@@ -1,0 +1,174 @@
+body{
+    margin: 0px;
+    padding: 0px;    
+    font-family: cursive;
+}
+
+body::before{
+    content: '';
+    position: absolute;
+    background: url('https://images.pexels.com/photos/1250653/pexels-photo-1250653.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500') no-repeat center center/cover;
+    width: 100%;
+    height: 365px;
+    z-index: -1;
+    opacity: 0.9;
+    
+}
+
+/* home section styling */
+#home #d1{
+    display: flex;
+}
+
+#home #d1 img{
+    filter: invert(1);
+    width: 60px;
+    margin-left: 40px;
+}
+
+
+/* navigation bar styling */
+#navbar{
+    /* background-color: aqua; */
+    padding: 1px;
+}
+#navbar ul{
+    display: flex;
+    justify-content: center;
+}
+#navbar ul li{
+    list-style-type: none;
+    /* padding: 10px; */
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px 15px;
+    cursor: pointer;
+    color: white;
+}
+
+#navbar ul li a:hover{
+    background-color: cyan;
+    color: black;
+    font-size: 22px;
+    border-radius: 10px;
+}
+
+/* Home1 section styling */
+#home1{
+    color: white;
+}
+#d2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+#home1 #p1{
+    text-align: center;
+    margin: 10px 475px;
+}
+
+#home #d02{
+    display: flex;
+    flex-direction: row;
+}
+
+button{
+    margin: 0px 5px;
+
+    background-color: brown;
+    color: wheat;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* about us section styling */
+#aboutus{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+
+#aboutus .card{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+    margin: 10px 40px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+#aboutus div img{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+/* contact us style section */
+#contactus{
+    display: flex;
+    justify-content: left;
+}
+
+#contactus form{
+    margin: 60px 50px;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    width: 700px;
+}
+
+#contactus form input, button{
+    margin: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+#contactus::before{
+    content: '';
+    position: absolute;
+    background: url('../static/image/contact.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 400px;
+    z-index: -1;
+}
+
+/* footer styling */
+#foot{
+    background: url('../static/image/fotter.jpg') no-repeat center center/cover;
+    height: 135px;
+    color: white;
+    /* content: '';
+    position: absolute;
+    background-image: url('../static/image/fotter.jpg') no-repeat center center/cover;
+    width: 100%;
+    z-index: -1; */
+}
+#foot div{
+    display: flex;
+    justify-content: center;
+}
+
+#foot div a{
+    text-decoration: none;
+    margin: 5px 20px;
+    color: white;
+}
+
+/* utility classes */
+.hprimary{
+    text-align: center;
+}
+
+.hsecondary{
+    text-align: center;
+}

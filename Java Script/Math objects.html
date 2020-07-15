@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Object in JS</title>
+</head>
+<body>
+    <div>
+        This is a Math Object's Tutorial.
+    </div>
+    <script>
+        console.log(Math);
+
+        // Some Math constant's value
+        console.log("The value of E in Math is : "+Math.E);
+        console.log("The value of PI in Math is : "+Math.PI);
+        console.log("The value of SQRT1_2 in Math is : "+Math.SQRT1_2);
+
+        // Some math Function's
+        let a = 44.34521;
+        let b = 22;
+
+        // Math.round() - used for roundoff
+
+        console.log(`The value of 'a' after roundoff is `+Math.round(a));
+        console.log(`The value of 'b' after roundoff is `+Math.round(b));
+        
+        // Math.pow()- used for finding the power of num
+        
+        console.log(`The value of '3' Power '4' is `+Math.pow(3,4));
+        console.log(`The value of '5' Power '3' is `+Math.pow(5,3));
+        console.log(`The value of '2' Power '12' is `+Math.pow(2,12));
+
+        // Math.sqrt() - used to find Square root of number
+
+        console.log(`The value of Square root of '2' is `+Math.sqrt(2)); 
+        console.log(`The value of Square root of '144' is `+Math.sqrt(144));
+        console.log(`The value of Square root of '36' is `+Math.sqrt(36));
+
+        // ceil and floor function
+        let a1 = -69;
+        console.log("The value of a after applying clif is "+Math.ceil(a));
+        console.log("The value of a after applying floor is "+Math.floor(a));
+
+        // Math.abs - return -ve value to positive
+    
+        console.log("The value of a after applying Absolute is "+Math.abs(a1));
+
+        // Min and Max function 
+        console.log("The greater value of from 56,4,22,3 after applying Max is "+Math.max(56,4,22,3));
+        console.log("The greater value of from -56,-4,-22,-3 after applying Max is "+Math.max(-56,-4,-22,-3));
+        console.log("The smallest value of from 56,4,22,3 after applying Max is "+Math.min(56,4,22,3));
+        console.log("The smallest value of from -56,-4,-22,-3 after applying Max is "+Math.min(-56,-4,-22,-3));
+
+
+        // Generating random number
+
+        let a2 = 69;
+        let b1 = 43;
+
+        let num = a2 + (b1-a2)*Math.random();
+        console.log(num);
+    </script>
+</body>
+</html>

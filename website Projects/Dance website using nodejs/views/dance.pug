@@ -1,0 +1,56 @@
+//- writing html scalaton/body
+doctype html
+html
+    head
+        title Nrityakala Dance Acadamy
+        style
+            include ../static/style.css
+    body
+        section#home
+            div#d1
+                img(src="../static/image/logo.jpg")
+                nav#navbar
+                    ul
+                        li #[a(href='#home1') Home]
+                        li #[a(href='#aboutus') About Us]
+                        li #[a(href='#contactus') Contact Us]
+        section#home1
+            div#d2
+                h1.hprimary Welcome to Nrityakala Dance Acadamy
+                h2.hsecondary EAT SLEEP DANCE REPEAT
+                p#p1 You are one step away to become a professional dancer Lorem, ipsum dolor sit amet consectetur adipis non quod, ea quisquam recusandae natus error? Nesciunt optio nostrum quam fuga
+                div#d02
+                    button Sign Up
+                    button Log In
+        h1.hprimary About Us
+        section#aboutus
+            div.card
+                h1.hprimary Admission
+                img(src="../static/image/1.jpg")
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint itaque recusandae inventore eaque nisi aspernatur.
+            div.card
+                h1.hprimary Learn
+                img(src="../static/image/2.jpg")
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint itaque recusandae inventore eaque nisi aspernatur.
+            div.card
+                h1.hprimary Perform
+                img(src="../static/image/3.jpg")
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint itaque recusandae inventore eaque nisi aspernatur.
+        h1.hprimary Contact Us
+        section#contactus
+            form(action="/contactus" method='post')
+                input(type="text" name='name' placeholder='Enter your name.')
+                input(type="text" name='gender' placeholder='Enter your Gender.')            
+                input(type="text" name='phonenumber' placeholder='Enter your Phonenumber.')
+                input(type="text" name='email' placeholder='Enter your e-mail.')
+                input(type="text" name='dancestyle' placeholder='Enter Dance Form you want to learn')
+                button Submit
+        footer#foot
+            h2.hprimary Copyrights 2020 | All Rights Reserved
+            h3.hsecondary Developed and maintained by Aditya yadav
+            div 
+                a(href='#home1') Home
+                a(href='#aboutus') About Us  
+                a(href='#contactus') Contact Us
+
+

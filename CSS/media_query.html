@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Media Query</title>
+	<style type="text/css">
+		.d{
+			background-color: cyan;
+			text-align: center;
+			display: none;
+			font-size: 70px;
+		}
+		@media (max-width:300px) and (min-width:0px){
+			#f{
+				display: block;
+				background-color: blue;
+				color: white;
+			}
+		}
+
+		@media (max-width:500px) and (min-width:300px){
+			#s{
+				display: block;
+				background-color: green;
+				color: white;
+			}
+		}
+
+		@media (max-width:800px) and (min-width:500px){
+			#t{
+				display: block;
+				background-color: orange;
+				color: white;
+			}
+		}
+
+		@media (max-width:800px){
+			#fo{
+				display: block;
+				background-color: red;
+				color: white;
+			}
+		}
+	</style>
+</head>
+<body>
+		<div id="f" class="d">I am Mobile</div>
+		<div id="s" class="d">I am Tablet</div>
+		<div id="t" class="d">I am Destop Computer</div>
+		<div id="fo" class="d">I am Wide Screen Computer</div>
+</body>
+</html>

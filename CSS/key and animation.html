@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Key and animation</title>
+	<style type="text/css">
+		.container{
+			background-color: #33ff66;
+		}
+		
+		.box img{
+		    border: 2px solid black;
+			width: 400px;
+			height: 300px;
+			/*to allpy animation first step is position=relative*/
+			position: relative;
+			/*animation-name: a;*/
+			animation-name: a1;
+			animation-duration: 5s;
+			animation-iteration-count: 1;
+			/*this is animation property*/
+			/*animation-fill-mode: alternate;*/
+			/*animation-timing-function: ease-in-out;*/
+			/*animation-delay: 2s;*/
+			/*animation-direction: reverse;*/
+		}
+		@keyframes a1{
+			0%{
+				top: 0px;
+				left: 0px;
+			}
+			25%{
+				top: 250px;
+				left: 0px;
+			}
+			75%{
+				top:250px;
+				left: 300px; 
+			}
+			100%{
+				top: 0px;
+				left: 300px;
+			}
+		}
+
+		@keyframes a{
+			from{
+				width: 200px;
+			}
+
+			to{
+				width: 650px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box">
+				<img src="https://www.nativeplanet.com/img/2016/09/2-19-1474281388.jpg">
+		</div>
+	</div>
+
+
+</body>
+</html>

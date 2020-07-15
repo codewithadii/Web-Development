@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Table tags</title>
+	<style>
+		div{
+			background-color: Yellow;
+			width:500px;
+			margin: 2px;
+		}
+		table, th, td{
+			border:3px solid Black;
+			border-collapse: collapse;
+			text-align: center;
+			padding: 10px;
+		}
+		#Custom thead{
+			background-color: Yellow;
+			color: Green;
+		}
+	</style>
+</head>
+<body>
+	<h2>Table tags</h2>
+	<h3>Simple table</h3>
+	<div>1."table" tag is used to add the table.</div>
+	<div>2."thead" tag is used to add headings of the table.it is optional.</div>
+	<div>3."tr" tag is used to add rows in table. It is used in "thead" or "tbody".</div>
+	<div>4."th" tag is used to enter data headings. it is written in "tr" tag.</div>
+	<div>5."tbody" tag is used to enter the data in table.</div>
+	<div>6."td" tag is used to enter the data od table.</div>
+	<div>7."col span" is an attribute used to combine two table column heading. It is used in "th" tag.</div>
+	<div>8."row span" is an attribute used to combine two rows in table body or table data.it is used in "td" tag.</div>
+	<br>
+	<table width="100%">
+		<thead>
+			<tr>
+				<th>SNo.</th>
+				<th>Name</th>
+				<th>City</th>
+				<th>Phoone No.</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>John</td>
+				<td>New York</td>
+				<td>2323439749</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Kevin</td>
+				<td>Paris</td>
+				<td>5628492459</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Walter</td>
+				<td>Mexico</td>
+				<td>4769351860</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>Hank</td>
+				<td>Policia</td>
+				<td>7483526495</td>
+			</tr>
+		</tbody>
+	</table>
+	<h3>Table with col span</h3>
+	<table width="100%">
+		<thead>
+			<tr>
+				<th>SNo.</th>
+				<th colspan="2">Name and City</th>
+				<th>Phoone No.</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>John</td>
+				<td>New York</td>
+				<td>2323439749</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Kevin</td>
+				<td>Paris</td>
+				<td>5628492459</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Walter</td>
+				<td>Mexico</td>
+				<td>4769351860</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>Hank</td>
+				<td>Policia</td>
+				<td>7483526495</td>
+			</tr>
+		</tbody>
+	</table>
+	<h3>Table with Row span</h3>
+	<table width="100%">
+		<thead>
+			<tr>
+				<th>SNo.</th>
+				<th>Name</th>
+				<th>City</th>
+				<th>Phoone No.</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td rowspan="2">1</td>
+				<td>John</td>
+				<td>New York</td>
+				<td>2323439749</td>
+			</tr>
+			<tr>
+				<td>Kevin</td>
+				<td>Paris</td>
+				<td>5628492459</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Walter</td>
+				<td>Mexico</td>
+				<td>4769351860</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Hank</td>
+				<td>Policia</td>
+				<td>7483526495</td>
+			</tr>
+		</tbody>
+	</table>
+	<h3>Custom table</h3>
+	<table width="100%" id="Custom">
+		<thead>
+			<tr>
+				<th>SNo.</th>
+				<th>Name</th>
+				<th>City</th>
+				<th>Phoone No.</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>John</td>
+				<td>New York</td>
+				<td>2323439749</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Kevin</td>
+				<td>Paris</td>
+				<td>5628492459</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Walter</td>
+				<td>Mexico</td>
+				<td>4769351860</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>Hank</td>
+				<td>Policia</td>
+				<td>7483526495</td>
+			</tr>
+		</tbody>
+	</table>
+	
+</body>
+</html>

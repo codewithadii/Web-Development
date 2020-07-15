@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON in JS</title>
+</head>
+<body>
+ <div>This is JSON tutorial</div>
+ <script>
+    //  JSON is used to store data
+    // creating an Object myjson
+     let myjson = {
+         name : "Aditya",
+         course : "B.tech",
+         Branch : "Computer Science",
+         Semester : 8
+     }
+    //  printing it
+    console.log(myjson);
+
+    //  converting object myjson into JSON using JSON.stringify() - it converts object elements into string.
+    myjson = JSON.stringify(myjson);
+    console.log(myjson);
+    
+    // applying string functions
+    myjson = myjson.replace("Aditya","Saurav");
+    console.log(myjson);
+    
+    // converting JSON into object using JSON.parse() - it convert JSON into Object.
+    myjson = JSON.parse(myjson);
+    console.log(myjson);
+ </script>   
+</body>
+</html>

@@ -1,0 +1,189 @@
+/*Css Reset*/
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: cursive;
+}
+/*navigation bar*/
+#navbar{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#navbar #D1 img{
+	border: 2px solid black;
+	width: 80px;
+	height: 60px;
+}
+#navbar ul{
+	display: flex;
+}
+
+#navbar ul li{
+	list-style-type: none;
+}
+
+#navbar ul li a{
+	text-decoration: none;
+	padding: 6px 30px;
+	font-size: 20px;
+	border-radius: 20px;
+	color: white;
+}
+
+#navbar ul li a:hover{
+	background-color: black;
+	color: white;
+	font-size: 23px;
+}
+
+#navbar::before{
+	content: "";
+	position: absolute;
+	background-color: grey;
+	top:0px;
+	left: 0px;
+	height: 10%;
+	width: 100%;
+	z-index: -1;
+	/*opacity: 0.89;*/
+}
+/*Home Section styling*/
+#home{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 80px;
+	padding: 3px 200px;	
+	color: white;
+}
+
+#home #b1{
+	background-color: brown;
+	color: white;
+	border-radius: 5px;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+#home::before{
+	content: "";
+	position: absolute;
+	top:0px;
+	left: 0px;
+	background: url("E:/WEB DEVELOPMENT/website Projects/Happy Meals website/images/home.jpg") no-repeat center center/cover;
+	height: 70%;
+	width: 100%;
+	z-index: -1;
+	opacity: 0.89;
+}
+/*Services Section Styling*/
+#Services{
+	margin: 40px;
+	display: flex;
+}
+#Services .box{
+	border: 2px solid brown;		
+	margin: 10px 20px;
+	display: flex;
+	flex-direction: column;
+	padding: 4px 10px;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(240,240,240);
+	border-radius: 10px;
+}
+
+#Services div img{
+	padding: 10px;
+	width: 180px;
+	height: 160px;
+	border-radius: 25px;
+}
+
+/*Clients*/
+#clients::before{
+	content: "";
+	position: absolute;
+	background: url("E:/WEB DEVELOPMENT/website Projects/Happy Meals website/images/client.jpg") no-repeat center center/cover;
+	height: 393px;
+	width:100%;
+	z-index: -1;
+	opacity: 0.6;
+}
+
+#clients div{
+	display: flex; 
+	/*justify-content: center;*/
+	align-items: center;
+	width: 1339px;
+	height: 300px; 
+}
+
+#clients div img{
+	border: 2px solid brown; 
+	width: 150px;
+	height: 150px;
+	margin: 60px 25px;
+	/*padding: 20px 25px; */
+}
+
+/*Contact Us*/
+#Contact::before{
+	content: "";
+	position: absolute;
+	background: url("E:/WEB DEVELOPMENT/website Projects/Happy Meals website/images/contact.jpg") no-repeat center center/cover;
+	height: 98%;
+	width: 100%;
+	z-index: -1;
+	opacity: 0.5;
+}
+
+#Contact div{
+	display: flex;
+	flex-direction: column;  
+	width: 100%;
+}
+
+#Contact div input ,textarea{
+	margin: 10px;
+	padding: 10px;
+	width: 400px;
+	margin-left: 100px;
+	border-radius: 10px;
+	font-size: 25px;
+}
+
+#Contact div .b3{ 
+	margin: 10px;
+	padding: 10px;
+	width: 400px;
+	margin-left: 110px;
+	font-size: 20px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+#Contact div .b3:hover{
+	background-color: black;
+	color:white;
+	font-size: 25px;
+}
+
+/*footer*/
+footer{
+	background-color: grey;
+	
+}
+/*Utility Style*/
+.h-primary{
+	font-size: 40px;
+}
+.h-secondary{
+	font-size: 30px;
+}
+.center{
+	text-align: center;
+}

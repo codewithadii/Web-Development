@@ -1,0 +1,2 @@
+The name of the client is : Aditya Yadav , Client's age is : 21 , 
+    Client's gender is : Male , Client's address is : Meerut Cantt , Motive to join Gym is : To get fit asap.

@@ -1,0 +1,168 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: cursive;
+}
+
+/* navbar div */
+#container1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: auto ;
+}
+
+#container1 img{
+    width: 75px;
+    height: 70px;
+    border: 2px solid brown;
+}
+/* Navbar */
+#navbar ul li a.active{
+    background-color: black;
+}
+
+#navul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.navli{
+    padding: 10px;
+    margin: 10px;
+
+}
+
+.navli a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navli a:hover{
+    background-color: cyan;
+    color: white;
+    /* font-size: 25px; */
+    border-radius: 10px;
+}
+
+/* Home section styling */
+
+#home{
+    color: white;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#home::before{
+    content: " ";
+    position: absolute;
+    top: 0px;
+    background: url("E:/WEB DEVELOPMENT/website Projects/Bridgelabs/static/Images/bl.jpg") no-repeat center center/cover;
+    height: 78%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1.2;
+}
+
+/* Services section styling */
+#service{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.service1{
+    border: 4px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 50px;
+    padding: 10px;
+    width: 300px;
+    height: 340px;
+    border-radius: 10px;
+}
+#service img{
+    display: block;
+    /* margin: auto; */
+    width: 160px;
+    height: 130px;
+    border: 2px solid brown;
+    border-radius: 10px;
+}
+
+#ser::before{
+    content: " ";
+    position: absolute;
+    background: url("E:/WEB DEVELOPMENT/website Projects/Bridgelabs/static/Images/fotter.jpg") no-repeat center center/cover;
+    height: 80%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Home1 styling */
+#home1{
+    color: black;
+    /* margin-top: 0px; */
+}
+#home1 #d1{
+    display: flex;
+    justify-content: center;
+}
+
+#home1 #d1 img{
+    border: 2px solid brown;
+    width: 150px;
+    height: 200px;
+    margin: 30px 15px;
+}
+
+#home1::before{
+    content: " ";
+    position: absolute;
+    background: url("E:/WEB DEVELOPMENT/website Projects/Bridgelabs/static/Images/center.jpg") no-repeat center center/cover;
+    height: 60%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* footer */
+footer{
+    background: url('E:/WEB DEVELOPMENT/website Projects/Bridgelabs/static/Images/fotter.jpg') no-repeat center center/cover;
+    color: white;
+}
+/* Utility Styling */
+.hprimary{
+    font-size: 35px;
+    text-align: center;
+}
+
+.hsecondary{
+    font-size: 25px;
+    margin: 15px;
+    text-align: center;
+}
+
+.btn{
+    background-color: brown;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 30px;
+}
+
+.para{
+    text-align: center;
+}
+
+.anchor{
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,2 @@
+The name of the client is : , Client's gender : , Client's phonenumber : ,
+    Client's email : , Dance Style  want to learn :  

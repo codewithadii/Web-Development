@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Input attributes</title>
+		<style>
+			body{
+				font-family: cursive;
+			}
+			h2{
+				background-color: Red;
+				color: White;
+				width: 350px;
+				border-radius: 10px;
+				padding: 10px;
+				margin: 10px;
+			}
+			div{
+				background-color: Orange;
+				width: 600px;
+				padding: 10px;
+				border-radius: 10px;
+				margin: 5px;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>Input attributes</h2>
+		<div>All these attribute will be used in "Input" tag.
+			<br>
+			1.value="Aditya" - It add value and display Aditya.
+			<br>
+			2.readonly- It will allow you to only read not write.
+			<br>
+			3.disabled- Same like readonly but light color.Use disabled instead readonly.
+			<br>
+			4.size="x"- Changes the size Increase or decrease.
+			<br>
+			5.rows="x" and cols="x"- It changes the rows  and columns. It is only used in "textarea" tag.
+		<h2>HTML5 Form Input attributes</h2>
+			1.required- It makes a textfield as madatory.For ex "*" field.
+			<br>
+			2.novalidate- It removes a validation. Mostly added to "form" tag.
+			<br>
+			3.autofocus- Enable autofocus.
+			<br>
+			4.pattern- used from a websibe "HTML5 Pattern" type it on google.
+			<br>
+			5.placeholder- Use it you will understand.
+		</div>
+		<div>
+			<form>
+				<label>User Name</label>
+				<input type="text" value="Aditya" name="">
+			</form>
+		</div>
+		<div>
+			<form>
+				<label>User Name</label>
+				<input type="text" value="Aditya" readonly>
+			</form>
+		</div>
+		<div>
+			<form>
+				<label>User Name</label>
+				<input type="text" value="Aditya" disabled>
+			</form>
+		</div>
+		<div>
+			<form>
+				<label>User Name</label>
+				<input type="text"  value="Aditya" size="40">
+			</form>
+		</div>
+		<div>
+			<form>
+				<label>User Name</label>
+				<textarea rows="21" cols="30" ></textarea>
+			</form>
+		</div>
+	<h2>HTML5 attributes</h2>	
+		<div>
+			<form>
+				<label required>Username</label>
+				<input type="text" required="true">
+				<input type="submit" name="">
+			</form>
+		</div>
+		<div>
+			<form novalidate>
+				<label>Username</label>
+				<input type="email" name="">
+				<input type="submit">
+			</form>
+		</div>
+		
+		<div>
+			<form>
+				<label>Username</label>
+				<input type="text" autofocus="">
+				<input type="submit">
+			</form>
+		</div>		
+		
+		<div>
+			<form>
+				<label>Username</label>
+				<input type="text" placeholder="Enter Username">
+				<input type="submit" name="">
+			</form>
+		</div>	
+	</body>
+</html>
